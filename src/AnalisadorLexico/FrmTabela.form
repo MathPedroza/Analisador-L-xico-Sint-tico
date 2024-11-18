@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Analisador L&#xe9;xico - Tabela de Tokens"/>
+    <Property name="extendedState" type="int" value="6"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="1326" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="541" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="12" style="0"/>
+            </Property>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="5" rowCount="48">
+                <Column editable="true" title="#" type="java.lang.Integer">
+                  <Data value="1"/>
+                  <Data value="2"/>
+                  <Data value="3"/>
+                  <Data value="4"/>
+                  <Data value="5"/>
+                  <Data value="6"/>
+                  <Data value="7"/>
+                  <Data value="8"/>
+                  <Data value="9"/>
+                  <Data value="10"/>
+                  <Data value="11"/>
+                  <Data value="12"/>
+                  <Data value="13"/>
+                  <Data value="14"/>
+                  <Data value="15"/>
+                  <Data value="16"/>
+                  <Data value="17"/>
+                  <Data value="18"/>
+                  <Data value="19"/>
+                  <Data value="20"/>
+                  <Data value="21"/>
+                  <Data value="22"/>
+                  <Data value="23"/>
+                  <Data value="24"/>
+                  <Data value="25"/>
+                  <Data value="26"/>
+                  <Data value="27"/>
+                  <Data value="28"/>
+                  <Data value="29"/>
+                  <Data value="30"/>
+                  <Data value="31"/>
+                  <Data value="32"/>
+                  <Data value="33"/>
+                  <Data value="34"/>
+                  <Data value="35"/>
+                  <Data value="36"/>
+                  <Data value="37"/>
+                  <Data value="38"/>
+                  <Data value="39"/>
+                  <Data value="40"/>
+                  <Data value="41"/>
+                  <Data value="42"/>
+                  <Data value="43"/>
+                  <Data value="44"/>
+                  <Data value="45"/>
+                  <Data value="46"/>
+                  <Data value="48"/>
+                  <Data value="null"/>
+                </Column>
+                <Column editable="true" title="Token" type="java.lang.String">
+                  <Data value="N&#xfa;mero"/>
+                  <Data value="Letra"/>
+                  <Data value="Relacional"/>
+                  <Data value="opAritmetico"/>
+                  <Data value="comentario"/>
+                  <Data value="Tipos"/>
+                  <Data value="FinalLinha"/>
+                  <Data value="CriarClasse"/>
+                  <Data value="FinalLinhaClasse"/>
+                  <Data value="Relacionamento"/>
+                  <Data value="Par&#xe2;metros"/>
+                  <Data value="Retorno"/>
+                  <Data value="Atributos Visibilidade"/>
+                  <Data value="Associa&#xe7;&#xf5;esAtributos"/>
+                  <Data value="Propriedades Opera&#xe7;&#xf5;es"/>
+                  <Data value="Relacionamentos Classes"/>
+                  <Data value="CriarChavesFK"/>
+                  <Data value="Op&#xe7;&#xf5;esFK"/>
+                  <Data value="Multiplicidade"/>
+                  <Data value="Navegabilidade"/>
+                  <Data value="CriarRela&#xe7;&#xe3;o"/>
+                  <Data value="CriarOp"/>
+                  <Data value="Shape"/>
+                  <Data value="Relationship"/>
+                  <Data value="delete"/>
+                  <Data value="para"/>
+                  <Data value="enquanto"/>
+                  <Data value="Do While"/>
+                  <Data value="Abre Colchete"/>
+                  <Data value="Fecha Colchete"/>
+                  <Data value="Abre Par&#xea;nteses "/>
+                  <Data value="Fecha Par&#xea;nteses"/>
+                  <Data value="ondelete"/>
+                  <Data value="onupdate"/>
+                  <Data value="Format"/>
+                  <Data value="Classe "/>
+                  <Data value="concurrent "/>
+                  <Data value="update"/>
+                  <Data value="Vari&#xe1;vel"/>
+                  <Data value="Constante"/>
+                  <Data value="V&#xed;rgula"/>
+                  <Data value="Func"/>
+                  <Data value="DefineConst"/>
+                  <Data value="number_relationships"/>
+                  <Data value="AbreChaves"/>
+                  <Data value="FechaChaves"/>
+                  <Data value="Quebra_Linha"/>
+                  <Data value="null"/>
+                </Column>
+                <Column editable="true" title="Lexema" type="java.lang.String">
+                  <Data value="0, 0.1, 1, 2, 3...1000, 10000"/>
+                  <Data value="A, a, b, c, d, D, &#x2026;.Z"/>
+                  <Data value="--, ++, ^=, --^=, ++^=, ^=^"/>
+                  <Data value="$, &#xa2;, #, &#xa7;"/>
+                  <Data value="{ &amp; coment&#xe1;rio &amp; }"/>
+                  <Data value="INTEGER, INT, CHAR, VARCHAR, DOUBLE, REAL, FLOAT, DATE, DATETIME, "/>
+                  <Data value="/;"/>
+                  <Data value="[ -&gt; NOME ] "/>
+                  <Data value=";;;"/>
+                  <Data value="1&amp;1, 1&amp;M, M&amp;M"/>
+                  <Data value="(... +parametro, + parametro ...)"/>
+                  <Data value="boolean, void, double, int, float, string"/>
+                  <Data value="protected, public, private, package"/>
+                  <Data value="readonly, unique, nonunique, ordered, unordered, autoincrement"/>
+                  <Data value="query, guarded"/>
+                  <Data value="Hierarquia, agrega&#xe7;&#xe3;o, generaliza&#xe7;&#xe3;o"/>
+                  <Data value="create_fk(atributo){Op&#xe7;&#xf5;esFK}"/>
+                  <Data value="cascade, restricted, set null, no action"/>
+                  <Data value="1,2,3.."/>
+                  <Data value="RightToLeft, LeftToRight"/>
+                  <Data value="(nomeTabela1, nomeTabela2) [relacionamento] "/>
+                  <Data value="(operador: retorno)"/>
+                  <Data value="Rectangular, Square, Circle, ect..."/>
+                  <Data value="Relationship"/>
+                  <Data value="delete"/>
+                  <Data value="For"/>
+                  <Data value="While&#x9;"/>
+                  <Data value="Do While"/>
+                  <Data value="["/>
+                  <Data value="]"/>
+                  <Data value="("/>
+                  <Data value=")"/>
+                  <Data value="ondelete"/>
+                  <Data value="onupdate"/>
+                  <Data value="Format"/>
+                  <Data value="Class "/>
+                  <Data value="concurrent "/>
+                  <Data value="update"/>
+                  <Data value="nota, tam, dist&#xe2;ncia"/>
+                  <Data value="PI, MAX, RAIO"/>
+                  <Data value=","/>
+                  <Data value="Func"/>
+                  <Data value="DefineConst"/>
+                  <Data value="number_relationships"/>
+                  <Data value="{"/>
+                  <Data value="}"/>
+                  <Data value="\\q"/>
+                  <Data value="null"/>
+                </Column>
+                <Column editable="true" title="Express&#xe3;o Regular" type="java.lang.String">
+                  <Data value="digito| digito.digito"/>
+                  <Data value="letra"/>
+                  <Data value="(--| ++| ^=| --^=| ++^=| ^=^)"/>
+                  <Data value="($| &#xa2;| #| &#xa7;)"/>
+                  <Data value="{ &amp;(letra|d&#xed;gito) &amp; }"/>
+                  <Data value="letra: letra(d&#xed;gito) /;  "/>
+                  <Data value="/;"/>
+                  <Data value="[ -&gt; letra]"/>
+                  <Data value=";;;"/>
+                  <Data value="[ Relationship: 1&amp;M /;  letra &lt;- letra /; "/>
+                  <Data value="Func =&gt; letra (letra|digito letra|d&#xed;gito) /;"/>
+                  <Data value="delete: void /;"/>
+                  <Data value="[ -&gt; letra =&gt; letra"/>
+                  <Data value="letra : int, autoincrement "/>
+                  <Data value="concurrent [ (letra $ letra) /; (d&#xed;gito # d&#xed;gito) /; "/>
+                  <Data value="[ letra &lt;- letra   d&#xed;gito * letra /; ] "/>
+                  <Data value="ondelete: cascade /; onupdate: cascade  } /; "/>
+                  <Data value="letra : letra /;"/>
+                  <Data value="number_relationships: d&#xed;gito /;"/>
+                  <Data value="Direction : letra /;"/>
+                  <Data value="Class (letra, letra) [ RelationshipType : hierarchy /; ] "/>
+                  <Data value="(update : void /;)"/>
+                  <Data value="Format: letra  /;"/>
+                  <Data value=" Relationship"/>
+                  <Data value="delete"/>
+                  <Data value="For"/>
+                  <Data value="While"/>
+                  <Data value="Do While"/>
+                  <Data value="["/>
+                  <Data value="]"/>
+                  <Data value="("/>
+                  <Data value=")"/>
+                  <Data value="ondelete"/>
+                  <Data value="onupdate"/>
+                  <Data value="Format"/>
+                  <Data value="Class"/>
+                  <Data value="concurrent"/>
+                  <Data value="update"/>
+                  <Data value="&#x201c;letra*|letra*d&#xed;gito*"/>
+                  <Data value="#DefineConst *letra = d&#xed;gito"/>
+                  <Data value=","/>
+                  <Data value="Func"/>
+                  <Data value="D#DefineConst *letra = d&#xed;gito"/>
+                  <Data value="#DefineConst *letra = d&#xed;gito"/>
+                  <Data value="{"/>
+                  <Data value="}"/>
+                  <Data value="\\q"/>
+                  <Data value="null"/>
+                </Column>
+                <Column editable="true" title="Descri&#xe7;a&#xf5; do Token" type="java.lang.String">
+                  <Data value="N&#xfa;meros usados em atribui&#xe7;&#xf5;es, operadores, etc..."/>
+                  <Data value="Letras do alfabeto para escrita"/>
+                  <Data value="Operadores de opera&#xe7;&#xf5;es de igualdade, diferen&#xe7;a, maior e menor"/>
+                  <Data value="Operadores de adi&#xe7;&#xe3;o, subtra&#xe7;&#xe3;o, multiplica&#xe7;&#xe3;o e divis&#xe3;o"/>
+                  <Data value="Usada quando n&#xe3;o se deseja que o c&#xf3;digo em quest&#xe3;o apare&#xe7;a para o usu&#xe1;rio"/>
+                  <Data value="Tipo de atributos int : n&#xfa;mero inteiros string: caracteres "/>
+                  <Data value="final de cada linha, como se fosse v&#xed;rgula nome: string /; idade: int /; "/>
+                  <Data value="Criar uma Classe"/>
+                  <Data value="Ponto que delimita fim de uma fun&#xe7;&#xe3;o, classe, etc..."/>
+                  <Data value="Relacionar classes criadas"/>
+                  <Data value="par&#xe2;metros dentro de uma fun&#xe7;&#xe3;o: exemplo: Nome: string"/>
+                  <Data value="Retorno de uma fun&#xe7;&#xe3;o"/>
+                  <Data value="Declarar antes de criar uma classe"/>
+                  <Data value="Atributos especiais, como exemplo, id &#xe9; sempre autoincrement"/>
+                  <Data value="Exemplo: concurrent &#xe9; usado para avaliar v&#xe1;rias f&#xf3;rmulas ao mesmo tempo"/>
+                  <Data value="Tipos de relacionamento, como exemplo hierarquia, herdando atributos de outra classe"/>
+                  <Data value="Criando chaves estrangeiras"/>
+                  <Data value="Op&#xe7;&#xf5;es de chave FK, quando atualizada ou exclu&#xed;da"/>
+                  <Data value="N&#xb0; de vezes que uma classe se relaciona"/>
+                  <Data value="Dire&#xe7;&#xe3;o para onde a rela&#xe7;&#xe3;o com outra classe &#xe9; apontada"/>
+                  <Data value="Cria a rela&#xe7;&#xe3;o entre duas tabelas que se relacionam entre si"/>
+                  <Data value="Cria o operador e seu respectivo retorno"/>
+                  <Data value="Formato que a classe vai ter, normalmente sempre se utiliza o ret&#xe2;ngulo"/>
+                  <Data value="Palavra reservada"/>
+                  <Data value="Palavra reservada"/>
+                  <Data value="La&#xe7;o de repeti&#xe7;&#xe3;o"/>
+                  <Data value="executa uma fun&#xe7;&#xe3;o enquanto a condi&#xe7;&#xe3;o for aceita"/>
+                  <Data value="Mesmo que o While, mas os comandos s&#xe3;o executados pelo menos uma vez"/>
+                  <Data value="Define Abertura de colchete"/>
+                  <Data value="Define fechamento de colchete"/>
+                  <Data value="Define Abertura de par&#xea;nteses"/>
+                  <Data value="Define fechamento de par&#xea;nteses"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="definir uma vari&#xe1;vel"/>
+                  <Data value="definir uma constante"/>
+                  <Data value="Separador de par&#xe2;metros dentro de uma fun&#xe7;&#xe3;o"/>
+                  <Data value="definir uma fun&#xe7;&#xe3;o"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="palavra reservada"/>
+                  <Data value="Define abertura de chaves"/>
+                  <Data value="Define fechamento de chaves"/>
+                  <Data value="Quebra de linha"/>
+                  <Data value="null"/>
+                </Column>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="25" minWidth="0" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="1500" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

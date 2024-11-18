@@ -1,0 +1,13 @@
+{
+[->Cidade
+codigo_cid::INT,AutoIncrement/;
+nome_cid::VARCHAR(60),NotNull/;
+estado_cid::VARCHAR(30),NotNull/;
+(Delete:::Void/;
+Update:::Void/;
+Create:::Void/;
+Read:::Void)
+Format:Rectangular/;
+&comentario&
+];;;
+}
