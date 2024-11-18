@@ -1,0 +1,7 @@
+Entrar no diretório D: cd /d d:
+
+Gerar classe Yylex:
+java -jar JFlex.jar LexerCup.flex 
+
+Gerar Sym.java e Parser.java:
+java -jar java-cup-11b.jar -parser Parser -symbols Sym Parser.cup

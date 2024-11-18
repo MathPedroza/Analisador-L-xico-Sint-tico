@@ -1,0 +1,94 @@
+package AnalisadorSintatico;
+import java.io.*;
+import java_cup.runtime.Symbol;
+import AnalisadorSintatico.Yylex;
+
+parser code
+{:
+        public static void main(String args[]) {
+            // new parser(new Yylex(new FileInputStream(args[0])).parse();
+            new parser(new Yylex(System.in)).parse();
+
+        }
+
+        public void syntax_error(Symbol s) {
+                report_error("Error de sintaxis. Linha: " +(s.right + 1) + 
+                "Coluna: " + s.left + ".Texto: \"" + s.value + \"", null);
+        // public static void carregar(String arquivo) Throws Exception {
+        // new parser(new Yylex(new FileInputStream(arquivo))).parse();
+        }
+:};
+
+/* Terminais*/
+
+terminal String letra, relacional, oparitmetico, comentario, tipos, final_linha, criar_classe;
+terminal String final_linha_classe, relacionamento, parametros, retorno, atributos_visibilidade;
+terminal String associacoes_atributos, propriedades_operacoes, relacionamentos_classes, criar_chaves_fk;
+terminal String opcoes_fk, navegabilidade, criar_relacao, criar_op, shape,relationship;
+terminal String delete, abre_colchete, fecha_colchete, abre_parenteses, fecha_parenteses, on_delete, on_update;
+terminal String format, concurrent, update, variavel, constante, virgula, func, define_const, number_relationship;
+terminal String para, enquanto, classe, enquanto_for, abre_chave, fecha_chave, ERROR, quebra_linha, espaco, atribuicao_func;
+terminal String atribuicao_classe, inicio_funcao, criacao_de_classe, atributos_da_classe, tipo_atributo, criar_metodo; 
+terminal String ler_metodo, alterar_metodo, excluir_metodo, retorno_metodo, se, senao;
+terminal integer numero, multiplicidade;
+
+/* Não terminal*/
+
+non terminal PROGRAMA, CORPO, EXPR, FIM, ATRIB, IF, ELSE, FOR, WHILE, DOWHILE, CONTEUDO, DECLARACAO, FUNCAO;
+non terminal CHAVES, NAVEGACAO, FORMAS, VISIBILIDADE, VALOR, RELACIONAMENTOS, ATRIBRELACIONAL;
+
+/* Gramática */
+
+start with PROGRAMA;
+
+PROGRAMA            ::= abre_chave CORPO fecha_chave
+                      | abre_chave fecha_chave;
+
+CORPO               ::= CORPO CONTEUDO
+                      | CONTEUDO;
+
+CONTEUDO            ::= EXPR        final_linha_classe
+                      | DECLARACAO  final_linha_classe
+                      | IF  
+                      | ELSE   
+                      | WHILE   
+                      | DOWHILE   
+                      | FOR  
+                      | FUNCAO;
+
+EXPR                ::= abre_colchete ATRIB EXPR fecha_colchete final_linha_classe 
+                      | abre_colchete EXPR relacional EXPR fecha_colchete final_linha_classe
+                      | abre_colchete EXPR oparitmetico EXPR fecha_colchete final_linha_classe
+                      | abre_colchete EXPR fecha_colchete
+                      | VALOR;
+
+VALOR               ::= numero
+                      | variavel;
+
+DECLARACAO          ::= variavel tipo_atributo tipos virgula associacoes_atributos final_linha;
+
+VISIBILIDADE        ::= atributos_visibilidade;
+
+NAVEGACAO           ::= navegabilidade;
+
+RELACIONAMENTOS     ::= relacionamento
+                      | relacionamentos_classes;
+
+CHAVES              ::= opcoes_fk;
+
+FORMAS              ::= shape;
+
+ATRIB               ::= atribuicao_func
+                      | atribuicao_classe
+                      | criacao_de_classe
+                      | relacional;
+
+ATRIBRELACIONAL     ::= relacional; 
+
+IF                  ::= se abre_parenteses EXPR fecha_parenteses abre_chave;
+ELSE                ::= fecha_chave senao abre_chave fecha_chave;
+WHILE               ::= enquanto abre_parenteses EXPR fecha_parenteses abre_chave fecha_chave;
+DOWHILE             ::= enquanto_for abre_chave EXPR fecha_chave enquanto_for;
+FOR                 ::= para abre_parenteses EXPR virgula EXPR virgula EXPR fecha_parenteses abre_chave fecha_chave;
+
+FUNCAO              ::= func atribuicao_func letra abre_parenteses FUNCAO fecha_parenteses inicio_funcao;    
